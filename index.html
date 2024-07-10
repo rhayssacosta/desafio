@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    <form id="search-form" class="search-form">
+        <label for="search-input">Pokemon ID</label>
+        <input type="text" name="search" id="search-input">
+    </form>
+    <div class="container"></div>
+    <div class="actions">
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .search-form {
+            width: 300px;
+            margin: 24px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .search-form input {
+            /* border-radius: 6px; */
+            border: 1px solid #181818;
+            border: none;
+            border-bottom: 40px ;  
+            height: 24px;
+        }
+
+        .container {
+            min-height: 300px;
+        }
+
+        .card {
+            border-radius: 8px;
+            border: 1px solid #c7c7c7;
+            margin: 0 auto;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: auto;
+            height: 160px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .actions button {
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <script src="app.js"></script>
+</body>
+</html>
